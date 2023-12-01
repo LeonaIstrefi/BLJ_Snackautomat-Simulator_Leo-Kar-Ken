@@ -5,11 +5,11 @@
 ## Inhaltsverzeichnis 
 
 * I  [Informieren](IPERKA-Files/Informieren.md)
-* P [Planen](Planen.md)
-* E [Entscheiden](Entscheiden.md)
-* R [Realisieren](Realisieren.md)
-* K [Kontrollieren](Kontrollieren.md)
-* A [Auswerten](Auswerten.md)
+* P [Planen](IPERKA-Files/Planen.md)
+* E [Entscheiden](IPERKA-Files/Entscheiden.md)
+* R [Realisieren](IPERKA-Files/Realisieren.md)
+* K [Kontrollieren](IPERKA-Files/Kontrollieren.md)
+* A [Auswerten](IPERKA-Files/Auswerten.md)
 
 <hr>
 
