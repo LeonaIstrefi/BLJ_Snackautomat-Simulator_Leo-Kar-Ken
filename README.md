@@ -4,7 +4,7 @@
 
 ## Inhaltsverzeichnis 
 
-* I  [Informieren](Informieren.md)
+* I  [Informieren](IPERKA-Files/Informieren.md)
 * P [Planen](Planen.md)
 * E [Entscheiden](Entscheiden.md)
 * R [Realisieren](Realisieren.md)
