@@ -2,5 +2,14 @@
 
 <hr> 
 
-# Inhaltsverzeichnis 
+## Inhaltsverzeichnis 
+
+* I [Informieren](Informieren.md)
+* P [Planen](Planen.md)
+* E [Entscheiden](Entscheiden.md)
+* R [Realisieren](Realisieren.md)
+* K [Kontrollieren](Kontrollieren.md)
+* A [Auswerten](Auswerten.md)
+
+<hr>
 
