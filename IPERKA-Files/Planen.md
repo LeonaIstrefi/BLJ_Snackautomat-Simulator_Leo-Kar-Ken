@@ -2,7 +2,12 @@
 
 <hr>
 
-<p> Als erstes haben wir uns auf dem Whiteboard alle Ideen und all unsere Wünsche aufgeschrieben, z.b. Snacks, </p>
+<p> Als erstes haben wir uns auf dem Whiteboard alle Ideen und all unsere Wünsche aufgeschrieben, z.b. Snacks, wie der Automat aussehen soll etc. </p>
+
+![image](https://github.com/LeonaIstrefi/BLJ_Snackautomat-Simulator_Leo-Kar-Ken/assets/145564029/282af06f-de67-4a3f-868e-97700705b873)
+![image](https://github.com/LeonaIstrefi/BLJ_Snackautomat-Simulator_Leo-Kar-Ken/assets/145564029/024c7a46-22f8-410a-9dd8-81ac1e1fbfbe)
+
+<hr>
 
 ## Diagramm zu unserem Snackautomaten 
 <p> Am Anfang haben wir ein Diagramm erstellt, damit wir und informieren können welche Funktionen wir wie machen möchten.
