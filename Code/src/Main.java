@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-    private static final String SECRET_KEY = "wauyee";
+    private static final String SECRET_KEY = "KLK";
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -22,7 +22,7 @@ public class Main {
         Product raffaello = new Product("Raffaello", 2.50, "\u001B[37m*\u001B[0m", 3, 14);
         Product knoppers = new Product("Knoppers", 1.90, "\u001B[36m#\u001B[0m", 3, 15);
 
-        double[] balance = { 10.0 }; // Initial balance
+        double[] balance = { 10.0 };
 
         String choice;
 
