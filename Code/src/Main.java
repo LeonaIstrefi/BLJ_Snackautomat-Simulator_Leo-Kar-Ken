@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        char choice;
+
+        Scanner scanner = new Scanner(System.in);
+
         Product twix = new Product("Twix", 2.30, "\u001B[38;5;220m=\u001B[0m", 3, 1);
         Product mars = new Product("Mars", 2.30, "\u001B[30m=\u001B[0m", 3, 2);
         Product snickers = new Product("Snickers", 2.30, "\u001B[38;5;94m=\u001B[0m", 3, 3);
@@ -15,20 +19,13 @@ public class Main {
         Product fuseTea = new Product("Fuse Tea", 2.90, "\u001B[33mH\u001B[0m", 3, 11);
         Product balisto = new Product("Balisto", 2.00, "\u001B[38;5;205m|\u001B[0m", 3, 12);
         Product milkyway = new Product("Milkyway", 2.30, "\u001B[34;2m=\u001B[0m", 3, 13);
-        Product rafaelo = new Product("Rafaelo", 2.50, "\u001B[37m*\u001B[0m", 3, 14);
-        Product knopers = new Product("Knopers", 1.90, "\u001B[36m#\u001B[0m", 3, 15);
+        Product raffaello = new Product("Raffaello", 2.50, "\u001B[37m*\u001B[0m", 3, 14);
+        Product knoppers = new Product("Knoppers", 1.90, "\u001B[36m#\u001B[0m", 3, 15);
 
-        double balance = 10;
-        char choice;
-
-        Scanner scanner = new Scanner(System.in);
-
-        printBalance(balance);
+        double[] balance = {10.0};
 
         do {
-            printVendingMachine(twix, mars, snickers, bounty, redbull, cola, pepsi, fanta, sprite, mountDew, fuseTea, balisto, milkyway, rafaelo, knopers);
-
-
+            printVendingMachine(twix, mars, snickers, bounty, redbull, cola, pepsi, fanta, sprite, mountDew, fuseTea, balisto, milkyway, raffaello, knoppers);
 
             System.out.print("Choose a product (1-15 / i / x): ");
             choice = scanner.next().charAt(0);
@@ -47,8 +44,8 @@ public class Main {
                         int productNumber = Integer.parseInt(String.valueOf(choice));
                         if (productNumber >= 1 && productNumber <= 15) {
                             processProductSelection(getProductByNumber(productNumber, twix, mars, snickers, bounty,
-                                    redbull, cola, pepsi, fanta, sprite, mountDew, fuseTea, balisto, milkyway, rafaelo,
-                                    knopers), balance, scanner);
+                                    redbull, cola, pepsi, fanta, sprite, mountDew, fuseTea, balisto, milkyway, raffaello,
+                                    knoppers), balance, scanner);
                         } else {
                             System.out.println("Invalid product number. Please choose a number between 1 and 15.");
                         }
@@ -59,10 +56,6 @@ public class Main {
             }
 
         } while (choice != 'x');
-    }
-
-    private static void printBalance(double balance) {
-        System.out.println("Balance: \u001B[32m$" + String.format("%.2f", balance) + "\u001B[0m");
     }
 
     private static void printProductList() {
@@ -80,8 +73,8 @@ public class Main {
         System.out.println("11-Fuse Tea");
         System.out.println("12-Balisto");
         System.out.println("13-Milkyway");
-        System.out.println("14-Rafaelo");
-        System.out.println("15-Knopers");
+        System.out.println("14-Raffaello");
+        System.out.println("15-Knoppers");
     }
 
     private static void printVendingMachine(Product... products) {
@@ -89,13 +82,23 @@ public class Main {
         System.out.println("\u001B[31m***\u001B[37m|KLK|\u001B[31m***\u001B[0m");
         System.out.println("\u001B[31m***********\u001B[0m");
         System.out.print("\u001B[31m*\u001B[0m");
-        for (int i = 0; i < products.length; i++) {
+
+        for (int i = 0; i < 15; i++) {
             if (i % 3 == 0 && i != 0) {
                 System.out.println("\u001B[31m*\u001B[0m");
                 System.out.print("\u001B[31m*\u001B[0m");
             }
-            System.out.print("\u001B[90m|\u001B[0m" + products[i].getDesign() + "\u001B[90m|\u001B[0m");
+
+            if (i < products.length) {
+                Product currentProduct = products[i];
+                if (currentProduct.getAmount() > 0) {
+                    System.out.print("\u001B[90m|\u001B[0m" + currentProduct.getDesign() + "\u001B[90m|\u001B[0m");
+                } else {
+                    System.out.print("\u001B[90m|\u001B[0m \u001B[90m|\u001B[0m");
+                }
+            }
         }
+
         System.out.println("\u001B[31m*\u001B[0m");
         System.out.println("\u001B[31m***********\u001B[0m");
         System.out.println("\u001B[31m*\u001B[37m|_____|\u001B[31m*\u001B[32m$\u001B[31m*\u001B[0m");
@@ -111,17 +114,17 @@ public class Main {
         return null;
     }
 
-    private static void processProductSelection(Product selectedProduct, double balance, Scanner scanner) {
-        if (selectedProduct != null && selectedProduct.getAmount() > 0 && selectedProduct.getPrice() <= balance) {
+    private static void processProductSelection(Product selectedProduct, double[] balance, Scanner scanner) {
+        if (selectedProduct != null && selectedProduct.getAmount() > 0 && selectedProduct.getPrice() <= balance[0]) {
             System.out.println("Selected product: " + selectedProduct.getName());
             System.out.println("Price: $" + selectedProduct.getPrice());
             System.out.print("Do you want to purchase this item? (y/n): ");
             char purchaseConfirmation = scanner.next().charAt(0);
             if (purchaseConfirmation == 'y') {
-                balance -= selectedProduct.getPrice();
+                balance[0] -= selectedProduct.getPrice();
                 selectedProduct.setAmount(selectedProduct.getAmount() - 1);
                 System.out.println("\u001B[32mPurchase successful!\u001B[0m");
-                System.out.println("Balance after purchase: \u001B[32m$" + String.format("%.2f", balance) + "\u001B[0m");
+                System.out.println("Balance after purchase: \u001B[32m$" + String.format("%.2f", balance[0]) + "\u001B[0m");
             } else if (purchaseConfirmation == 'n') {
                 System.out.println("\u001B[31mPurchase canceled.\u001B[0m");
             } else {
@@ -181,4 +184,3 @@ class Product {
         return "Product: " + name + ", Price: $" + price + ", Design: " + design + ", Amount: " + amount;
     }
 }
- 
