@@ -2,6 +2,8 @@
 
 <hr>
 
+<p> Als erstes haben wir uns auf dem Whiteboard alle Ideen und all unsere Wünsche aufgeschrieben, z.b. Snacks, </p>
+
 ## Diagramm zu unserem Snackautomaten 
 <p> Am Anfang haben wir ein Diagramm erstellt, damit wir und informieren können welche Funktionen wir wie machen möchten.
   Sobald wir mit dem informieren fertig waren haben wir ein erneutes Diagramm erstellt. Dieses Diagramm ist für unsere Planung da. In diesem Diagramm haben wir festgehalten, wie die Base von unserem Projekt aussehen sollte.</p>
