@@ -1,8 +1,15 @@
 # Planen 
-Nachdem wir uns informiert haben fingen wir an mit der Planung. Um es uns besser vorzustellen, erstellten wir mehrere Diagramme: eins über den allgemeinen Prozess eines Automaten und ein weiteres für unser Projekt. <br>
-**Dieses Diagramm zeigt den allgemeinen Prozess eines Automaten:**
 
-<img width="716" alt="image" src="https://github.com/LeonaIstrefi/BLJ_Snackautomat-Simulator_Leo-Kar-Ken/assets/145563893/a49687c3-6ae0-480a-971f-51e6f515d2ec">
+<hr>
+
+## Diagramm zu unserem Snackautomaten 
+<p> Am Anfang haben wir ein Diagramm erstellt, damit wir und informieren können welche Funktionen wir wie machen möchten.
+  Sobald wir mit dem informieren fertig waren haben wir ein erneutes Diagramm erstellt. Dieses Diagramm ist für unsere Planung da. In diesem Diagramm haben wir festgehalten, wie die Base von unserem Projekt aussehen sollte.</p>
+
+#### Hier ist das Diagramm zu der Base von unserem Projekt
+
+![image](https://github.com/LeonaIstrefi/BLJ_Snackautomat-Simulator_Leo-Kar-Ken/assets/145564029/74d67b1d-d7ce-4460-96c9-adf240b3c29a)
+
 
 <hr> 
 
