@@ -1,10 +1,6 @@
 # Realisieren
 <hr> 
 
-## Main class
-
-### Anfang
-
 Am Anfang haben wir zwei Klassen erstellt; Main und Products. Bei den Products mussten wir zuerst alle Daten erstellen wie z.B. Amount, etc. 
 
 <img width="163" alt="Screenshot 2023-12-07 120937" src="https://github.com/LeonaIstrefi/BLJ_Snackautomat-Simulator_Leo-Kar-Ken/assets/145564001/62b9f569-9574-48aa-a1ab-ff5924f4e2bb">
