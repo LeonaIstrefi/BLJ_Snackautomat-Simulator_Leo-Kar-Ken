@@ -10,7 +10,27 @@
 
 ![image](https://github.com/LeonaIstrefi/BLJ_Snackautomat-Simulator_Leo-Kar-Ken/assets/145564029/74d67b1d-d7ce-4460-96c9-adf240b3c29a)
 
+<hr>
 
-<hr> 
+## Aufteilung der Funktionen 
+
+<p> Nachdem wir die Base von unserem Projekt hatten, mussten wir anfangen zu planen wer welche funktionen macht. Wir haben versucht alles so fair wie möglich aufzuteilen und dafür zu sorgen, dass jeder ca. gleich viele Funktionen hat. </p>
+
+Leona: 
+<ul>
+
+  
+</ul>
+
+Karol: 
+<ul>
+
+  
+</ul>
+Kenneth: 
+<ul>
+
+  
+</ul>
 
 [Zurück zum Inhaltsverzeichnis](../README.md)
