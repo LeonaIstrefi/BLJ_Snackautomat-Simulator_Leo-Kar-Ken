@@ -19,19 +19,36 @@
 
 Leona: 
 <ul>
-
-  
+<li> Getters </li>
+<li> Setters </li>
+<li> Informieren </li>
+<li> Planen </li>
+<li> Entscheiden </li>
+<li> Auswerten </li>
+<li> Allgemeine Änderungen in der Dokumentation </li>
 </ul>
 
 Karol: 
 <ul>
-
-  
+<li> Main </li>
+<li> PrintVendingMachine </li>
+<li> getProductsByNumber </li>
+<li> processProductSelection </li>
+<li> Realisieren </li>
 </ul>
+
 Kenneth: 
 <ul>
-
-  
+<li> secretKeyFunction </li>
+<li> refillStock </li>
+<li> changeProduct </li>
+<li> changePrice </li>
+<li> validSecretKey </li>
+<li> printProductList </li>
+<li> Planen </li>
+<li> Entscheiden </li> 
 </ul>
+
+<hr> 
 
 [Zurück zum Inhaltsverzeichnis](../README.md)
