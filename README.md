@@ -13,3 +13,8 @@
 
 <hr>
 
+Projekt Demo 
+
+https://github.com/LeonaIstrefi/BLJ_Snackautomat-Simulator_Leo-Kar-Ken/assets/145564029/2465dc52-fcc0-4bde-979c-4e5d2a111339
+
+<hr>
